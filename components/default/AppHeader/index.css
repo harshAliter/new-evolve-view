@@ -1,0 +1,373 @@
+.regular-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+.regular-scroll::-webkit-scrollbar-thumb {
+  height: 30%;
+  scrollbar-color: #353535;
+  border-radius: 0px;
+  background-color: #353535;
+}
+
+.primary-hoverable-icon {
+  -webkit-transition: background-color 80ms linear, color 40ms linear;
+  transition: background-color 80ms linear, color 40ms linear;
+}
+
+.primary-hoverable-icon:hover {
+  background-color: #f4f7ff;
+}
+
+.primary-hoverable-icon:hover .icon {
+  color: #195BFF;
+}
+
+body.dark .primary-hoverable-icon:hover .icon {
+  color: #FFF;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-content {
+  white-space: nowrap;
+  width: auto;
+  padding: 4px 10px;
+  bottom: -1.8rem;
+  border-radius: 25px;
+  display: block;
+  background-color: #495057;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  z-index: 10;
+  -webkit-transition: visibility 30ms ease, -webkit-transform 60ms ease;
+  transition: visibility 30ms ease, -webkit-transform 60ms ease;
+  transition: transform 60ms ease, visibility 30ms ease;
+  transition: transform 60ms ease, visibility 30ms ease, -webkit-transform 60ms ease;
+  -webkit-transform: translateY(-4px) scaleX(0.9);
+          transform: translateY(-4px) scaleX(0.9);
+}
+
+@media screen and (min-width: 767px) {
+  .tooltip:hover .tooltip-content {
+    visibility: visible;
+    -webkit-transform: translateY(0) scaleX(1);
+            transform: translateY(0) scaleX(1);
+  }
+}
+
+body.dark .tooltip .tooltip-content {
+  background-color: #FFF;
+  color: #121212;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@-webkit-keyframes anim-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim-fade-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes anim-fade-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes anim-fade-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes anim-fade-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes anim-fade-out-up {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes anim-fade-out-up {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+.animate-fadein {
+  -webkit-animation-name: anim-fade-in;
+  animation-name: anim-fade-in;
+  -webkit-animation-duration: 280ms;
+          animation-duration: 280ms;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.animate-fadedown {
+  -webkit-animation-name: anim-fade-down;
+  animation-name: anim-fade-down;
+  -webkit-animation-duration: 280ms;
+          animation-duration: 280ms;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.animate-fadedown {
+  -webkit-animation-name: anim-fade-up;
+  animation-name: anim-fade-up;
+  -webkit-animation-duration: 280ms;
+          animation-duration: 280ms;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.animate-fade-out-up, .fade-out-up-leave-active {
+  -webkit-animation-name: anim-fade-out-up;
+  animation-name: anim-fade-out-up;
+  -webkit-animation-duration: 280ms;
+          animation-duration: 280ms;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.nav-menu-item {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav-menu-item .app-icon-button {
+  padding: 0;
+}
+
+.nav-menu-item .app-icon-button .icon {
+  font-size: 18px !important;
+}
+
+.nav-menu-item .context {
+  -webkit-animation-name: anim-fade-down;
+  animation-name: anim-fade-down;
+  -webkit-animation-duration: 180ms;
+          animation-duration: 180ms;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  position: absolute;
+  top: 50px;
+  right: 8px;
+  width: 540px;
+  border-radius: 8px;
+  background-color: #FFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-item .context {
+    position: fixed;
+    bottom: 3.2rem;
+    top: auto;
+    left: 3rem;
+    right: 3rem;
+    width: auto;
+    -webkit-animation-name: anim-fade-up;
+    animation-name: anim-fade-up;
+    -webkit-animation-duration: 180ms;
+            animation-duration: 180ms;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+}
+
+.nav-menu-item .context::after {
+  position: absolute;
+  content: '';
+  border: 13px solid transparent;
+  border-bottom-color: #FFF;
+  border-top: 0;
+  top: -12px;
+  right: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-item .context::after {
+    display: none;
+  }
+}
+
+.nav-menu-item .context hr {
+  visibility: hidden;
+}
+
+.nav-menu-item .context .context-container {
+  padding: 12px 8px;
+  height: inherit;
+}
+
+.nav-menu-item .context .context-container .title-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu-item .context .context-container .title-bar .context-title {
+  font-weight: 500;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nav-menu-item .context.custom-bg.electric-violet-bg {
+  border-color: transparent;
+  background-image: linear-gradient(145deg, #4776e6, #8e54e9);
+}
+
+.nav-menu-item .context.custom-bg.electric-violet-bg::after {
+  border-bottom-color: #4776e6;
+}
+
+.nav-menu-item .context.custom-bg.electric-violet-bg .context-container .title-bar .context-title {
+  color: #FFF;
+}
+
+.nav-menu-item .context.custom-bg.purple-love-bg {
+  border-color: transparent;
+  background-image: linear-gradient(145deg, #9796f0, #fbc7d4);
+}
+
+.nav-menu-item .context.custom-bg.purple-love-bg::after {
+  border-bottom-color: #cc2b5e;
+}
+
+.nav-menu-item .context.custom-bg.purple-love-bg .context-container .title-bar .context-title {
+  color: #FFF;
+}
+
+.nav-menu-item .context-leave-active {
+  -webkit-transition: opacity 250ms ease-out, 
+ -webkit-transform 200ms ease;
+  transition: opacity 250ms ease-out, 
+ -webkit-transform 200ms ease;
+  transition: opacity 250ms ease-out, 
+ transform 200ms ease;
+  transition: opacity 250ms ease-out, 
+ transform 200ms ease, 
+ -webkit-transform 200ms ease;
+}
+
+.nav-menu-item .context-leave-to {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+body.dark .nav-menu-item .context {
+  border-color: #5c5c5c;
+  background-color: #3b3b3b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.dark .nav-menu-item .context::after {
+  border-bottom-color: #4f4f4f;
+}
+
+body.dark .nav-menu-item .context hr {
+  visibility: hidden;
+}
+
+body.dark .nav-menu-item .context .context-container .title-bar .context-title {
+  color: #ebebeb;
+}
+/*# sourceMappingURL=index.css.map */

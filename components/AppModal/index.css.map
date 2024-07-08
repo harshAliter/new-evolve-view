@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AG4BA,AAzBI,eAyBW,AAzBV,mBAAmB,CAAC;EACjB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;CACd;;AAsBL,AApBI,eAoBW,AApBV,yBAAyB,CAAC;EACvB,MAAM,EAAE,GAAG;EACX,eAAe,EAVC,OAAe;EAW/B,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAZA,OAAe;CAelC",
+    "sources": [
+        "index.scss",
+        "../../assets/scss/v2/_vars.scss",
+        "../../assets/scss/v2/_mixins.scss",
+        "../../assets/scss/v2/utils/_scroll.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

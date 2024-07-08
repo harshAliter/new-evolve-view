@@ -1,0 +1,12 @@
+.regular-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+.regular-scroll::-webkit-scrollbar-thumb {
+  height: 30%;
+  scrollbar-color: #353535;
+  border-radius: 0px;
+  background-color: #353535;
+}
+/*# sourceMappingURL=index.css.map */

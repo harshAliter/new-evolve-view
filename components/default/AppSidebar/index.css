@@ -1,0 +1,108 @@
+.primary-hoverable-icon {
+  -webkit-transition: background-color 80ms linear, color 40ms linear;
+  transition: background-color 80ms linear, color 40ms linear;
+}
+
+.primary-hoverable-icon:hover {
+  background-color: #f4f7ff;
+}
+
+.primary-hoverable-icon:hover .icon {
+  color: #195BFF;
+}
+
+body.dark .primary-hoverable-icon:hover .icon {
+  color: #FFF;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltip-content {
+  white-space: nowrap;
+  width: auto;
+  padding: 4px 10px;
+  bottom: -1.8rem;
+  border-radius: 25px;
+  display: block;
+  background-color: #495057;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  z-index: 10;
+  -webkit-transition: visibility 30ms ease, -webkit-transform 60ms ease;
+  transition: visibility 30ms ease, -webkit-transform 60ms ease;
+  transition: transform 60ms ease, visibility 30ms ease;
+  transition: transform 60ms ease, visibility 30ms ease, -webkit-transform 60ms ease;
+  -webkit-transform: translateY(-4px) scaleX(0.9);
+          transform: translateY(-4px) scaleX(0.9);
+}
+
+@media screen and (min-width: 767px) {
+  .tooltip:hover .tooltip-content {
+    visibility: visible;
+    -webkit-transform: translateY(0) scaleX(1);
+            transform: translateY(0) scaleX(1);
+  }
+}
+
+body.dark .tooltip .tooltip-content {
+  background-color: #FFF;
+  color: #121212;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.regular-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+.regular-scroll::-webkit-scrollbar-thumb {
+  height: 30%;
+  scrollbar-color: #353535;
+  border-radius: 0px;
+  background-color: #353535;
+}
+
+.dropdown-toggler {
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+  right: 2px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.dropdown-toggler i.material-icons {
+  display: none;
+  color: white !important;
+}
+
+.dropdown-toggler.rotate .app-icon-button {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+}
+
+[aria-level="1"] {
+  padding-left: 12px;
+}
+
+[aria-level="2"] {
+  padding-left: 12px;
+}
+
+[aria-level="3"] {
+  padding-left: 16px;
+}
+/*# sourceMappingURL=index.css.map */

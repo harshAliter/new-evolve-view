@@ -1,0 +1,51 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "evolve": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@pinia/nuxt": "^0.5.1",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "autosize": "^6.0.1",
+    "chance": "^1.1.11",
+    "chart.js": "^4.4.3",
+    "flatpickr": "4.6.13",
+    "highcharts": "^11.4.4",
+    "highcharts-vue": "2.0.0",
+    "html2canvas": "^1.4.1",
+    "jquery": "^3.7.1",
+    "jquery.fancytree": "2.38.0",
+    "js-cookie": "^3.0.5",
+    "jspdf": "1.5.3",
+    "jspdf-autotable": "3.5.25",
+    "lodash": "^4.17.21",
+    "moment": "2.29.4",
+    "node-sass": "^9.0.0",
+    "nuxt": "^3.12.2",
+    "nuxt-socket-io": "^3.0.13",
+    "pinia": "^2.1.7",
+    "pretty-checkbox-vue": "^1.1.9",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "sass-migrator": "^2.0.3",
+    "select2": "4.0.13",
+    "tiny-emitter": "^2.1.0",
+    "uikit": "^3.21.5",
+    "vue-flatpickr-component": "^11.0.5",
+    "vue-router": "4.2.4",
+    "vue3-json-editor": "^1.1.5",
+    "vuejs-paginate-next": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint-loader": "^4.0.2"
+  }
+}

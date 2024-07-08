@@ -1,0 +1,13 @@
+.sortable-handle-el {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+
+.sortable-ghost {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sortable-ghost > * {
+  visibility: hidden;
+}
+/*# sourceMappingURL=sortable.css.map */

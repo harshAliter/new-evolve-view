@@ -1,0 +1,65 @@
+$scrollbar-thumb-color: rgb(53, 53, 53);
+
+@mixin regular-scrollbar {
+    &::-webkit-scrollbar {
+        // width: 8px;
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        height: 30%;
+        scrollbar-color: $scrollbar-thumb-color;
+        border-radius: 0px;
+        background-color: $scrollbar-thumb-color;
+        // background-color: transparent;
+        //transition: background-color 70ms linear;
+    }
+
+    // &:hover {
+    //     &::-webkit-scrollbar-thumb {
+    //         background-color: $fr-6;
+
+    //         &:active {
+    //             background-color: $fr-5;
+    //         }
+    //     }
+    // }
+    &::-moz-scrollbar {
+        width: 12px;
+      }
+    &::-moz-scrollbar-thumb {
+        background-color: #3498db !important;
+        border-radius: 6px;
+      }
+}
+
+.regular-scroll {
+    @include regular-scrollbar();
+}
+
+// @include use-dark {
+//     .regular-scroll {
+//         &:hover {
+//             &::-webkit-scrollbar-thumb {
+//                 background-color:#0000; // $stroke-dark-3;
+    
+//                 &:active {
+//                     background-color: #0000; //$stroke-dark-4;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.regular-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #353535 #d9d7d7;
+  }
+
+  .regular-scroll:-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 6px;
+    border: 3px solid transparent;
+  }
